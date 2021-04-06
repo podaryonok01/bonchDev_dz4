@@ -1,0 +1,55 @@
+*,
+body {
+    box-sizing: border-box;
+}
+
+.modal {
+    display:    block;
+    overflow: hidden; 
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('loading.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+.cards {
+    display: flex;
+    padding: 20px;
+
+}
+
+.card {
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn {
+    border: 1px solid blue;
+    padding: 7px;
+    background-color: rgb(179, 179, 255);
+    cursor: pointer;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+/* body.loading .modal {
+    overflow: hidden;   
+} */
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+/* body.loading .modal {
+    display: block;
+} */
